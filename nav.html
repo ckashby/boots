@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CKAshby Blog</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity=""
+    crossorigin="">
+  <style>
+    /* Responsive top padding to prevent navbar overlap */
+    body {
+      padding-top: 56px;
+      /* Default padding */
+    }
+
+    section {
+      padding-top: 56px;
+      /* Default padding */
+    }
+
+    /* Adjust padding for different screen sizes */
+    @media (min-width: 992px) {
+      body {
+        padding-top: 70px;
+        /* Larger padding for larger screens */
+      }
+    }
+
+    @media (max-width: 991px) {
+      body {
+        padding-top: 56px;
+        /* Smaller padding for mobile */
+      }
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all links that should close the navbar
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // Close the navbar on small screens
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                
+                if (window.innerWidth < 992) { // Bootstrap's lg breakpoint
+                    navbarToggler.classList.add('collapsed');
+                    navbarCollapse.classList.remove('show');
+                }
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.slashdot.org" target="_blank" rel="noopener noreferrer">Slashdot</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" id="top">
+    <h1>CKAshby Blog<span class="badge text-bg-warning text-primary">New</span></h1>
+    <p>Setup bootstrap hero and flex columns!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit natus cupiditate quas ea, praesentium ipsum aspernatur est modi ab ipsam earum, nostrum repellat exercitationem atque sapiente, vitae ex unde quis rerum maiores fugit. Reprehenderit autem quas et. Vitae eum maiores eligendi harum aliquid repudiandae? Praesentium non dolor illum veritatis, ipsa nihil expedita error placeat ipsam aliquam, ullam eveniet possimus! Qui animi quia, iusto, vitae labore veniam ipsam quas inventore architecto vero maxime reprehenderit quaerat facere id officiis perferendis doloribus soluta! Ut natus recusandae rem voluptas perferendis at reiciendis alias voluptatum, tenetur laborum id ea neque consequuntur, corporis, quisquam deleniti vero. Impedit atque blanditiis repudiandae, aliquam architecto perferendis, placeat repellendus quaerat fuga ratione error enim tenetur possimus inventore neque. Labore, necessitatibus quaerat est doloribus odit eaque?</p>
+
+    </div>
+    <a href="https://getbootstrap.com/docs/5.3.3/components/badge/" class="btn btn-primary">Sign up now!<span class="badge text-bg-secondary">4</span></a>
+
+    </body>
+    </html>
