@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -23,7 +23,10 @@
             <a class="nav-link active" aria-current="page" href="">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section">Link to html section</a>
+            <a class="nav-link" href="#">Top</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#bottom">Bottom</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://www.slashdot.org">Slashdot</a>
@@ -65,6 +68,14 @@
       <span class="visually-hidden">Loading...</span>
     </div>
 
+    <a href="#" class="btn btn-lg btn-outline-primary">Large Primary Button</a>
+    <div class="btn-group">
+      <a href="" class="btn btn-primary">One</a><a href="" class="btn btn-warning">One</a><a href="" class="btn btn-success">One</a>
+    </div>
+    <div class="mx-3 py-3 border border-success border-5 rounded-pill">Div has margin on x padding on y</div>
+    <hr />
+    <img src="./images/cka-sig400.png" alt="signature" class="rounded-circle shadow-lg" />
+
     <section id="Projects" ><h1 class="display-3 text-center">Projects</h1>
       <p class="lead">This is the lead text...</p>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed necessitatibus omnis quam quis, dignissimos aliquam. Blanditiis, perferendis cumque, asperiores labore consectetur quasi debitis, quos consequuntur repellat aliquam consequatur? Asperiores saepe laboriosam similique. Amet delectus temporibus magni illum unde soluta, incidunt, tenetur facilis culpa quibusdam expedita aliquid sint ut necessitatibus, ipsa tempora magnam modi enim. Dolore quasi temporibus delectus, repellat quis maxime fugit, iste impedit molestias, dolor possimus excepturi modi debitis ut quidem. Dicta explicabo beatae officia blanditiis iste illo, cumque amet odio dignissimos eaque aliquam consectetur sint ipsam illum, deleniti incidunt tempore ab officiis pariatur cum accusamus aut praesentium nulla? Enim atque quia exercitationem recusandae suscipit adipisci a, eius inventore, aliquid id reiciendis magnam earum corporis unde, totam expedita commodi?</p>
@@ -91,6 +102,7 @@
     </section>
 
     <div class="fw-bold" id="bottom">Bottom of the Page</div>
+    <a href="" class="btn btn-outline text-success">Top of the Page</a>
     <small>Small has nothing to do with bootstrap</small>
   </div>
   </div> <!-- End of page container div -->
